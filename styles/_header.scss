@@ -1,0 +1,17 @@
+header{
+    background-color:$accentColor;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    h1{
+        color: white;
+        margin: 10px 5px;
+        font-family: $mainFont;
+        font-weight: 600;
+        font-size: $headerFontSize;
+    }
+    #second-word{
+        color: $textColor;
+    }
+}
