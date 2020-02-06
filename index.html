@@ -15,6 +15,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./js/owl.carousel.js"></script>
     <title>Quiz Maker</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -45,9 +50,58 @@
 
         <!-- Customised Quiz Template -->
         <div class="custom-quiz-container container-item">
-            <div class="item"> <p id="default-quiz-heading" >Ipsum Quiz</p> <p id="preview-text" >Preview template</p> </div>
-            <div class="item"> <p id="default-quiz-heading" >Ipsum Quiz</p> <p id="preview-text" >Preview template</p> </div>
-            <div class="item"> <p id="default-quiz-heading" >Ipsum Quiz</p> <p id="preview-text" >Preview template</p> </div>
+            <div class="item"> 
+                <p id="default-quiz-heading" >Ipsum Quiz</p> 
+                <p id="preview-text" >Preview template</p> 
+                <i class="material-icons popover-button" onclick="onClickMenu()">more_vert</i>
+            
+            <section class="popup hide">
+                <ul>
+                    <li><img src="./img/buy-button-button-layout_major_monotone.svg" alt=""> <span>Button Changer</span> </li>
+                    <li><img src="./img/edit.svg" alt=""> <span>Quiz Edit</span> </li>
+                    <li><img src="./img/delete_major_monotone.svg" alt=""> <span>Delete Quiz</span> </li>
+                    <li><img src="./img/add.svg" alt=""> Add Questions </li>
+                    <li><img src="./img/graph.svg" alt=""> Analytical Graph </li>
+                </ul>   
+            </section>
+            
+            </div>
+
+            <div class="item"> 
+                <p id="default-quiz-heading" >Ipsum Quiz</p> 
+                <p id="preview-text" >Preview template</p> 
+                <i class="material-icons popover-button" onclick="onClickMenu()">more_vert</i>
+            
+                <section class="popup hide">
+                <ul>
+                    <li><img src="./img/buy-button-button-layout_major_monotone.svg" alt=""> <span>Button Changer</span> </li>
+                    <li><img src="./img/edit.svg" alt=""> <span>Quiz Edit</span> </li>
+                    <li><img src="./img/delete_major_monotone.svg" alt=""> <span>Delete Quiz</span> </li>
+                    <li><img src="./img/add.svg" alt=""> Add Questions </li>
+                    <li><img src="./img/graph.svg" alt=""> Analytical Graph </li>
+                </ul>   
+            </section>
+            
+            </div>
+
+            <div class="item"> 
+                <p id="default-quiz-heading" >Ipsum Quiz</p> 
+                <p id="preview-text" >Preview template</p> 
+                <i class="material-icons popover-button" onclick="onClickMenu()">more_vert</i>
+            
+                <section class="popup hide">
+                <ul>
+                    <li><img src="./img/buy-button-button-layout_major_monotone.svg" alt=""> <span>Button Changer</span> </li>
+                    <li><img src="./img/edit.svg" alt=""> <span>Quiz Edit</span> </li>
+                    <li><img src="./img/delete_major_monotone.svg" alt=""> <span>Delete Quiz</span> </li>
+                    <li><img src="./img/add.svg" alt=""> Add Questions </li>
+                    <li><img src="./img/graph.svg" alt=""> Analytical Graph </li>
+                </ul>   
+            </section>
+            
+            </div>
+
+            
             <div class="item"> <i class="material-icons"> add </i> <p id="preview-text" >Add a template</p> </div>
         </div>
     </div>
@@ -55,9 +109,16 @@
 
 
     <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel();
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop:true,
+                nav:true,
+            });
         });
+
+        function onClickMenu() {
+            $('.popup').toggleClass('hide');
+        }
     </script>
 </body>
 </html>

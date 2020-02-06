@@ -84,6 +84,7 @@ header #second-word {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: 10rem;
+  justify-items: center;
 }
 
 .custom-quiz-container .item {
@@ -91,6 +92,7 @@ header #second-word {
   width: 400px;
   margin-bottom: 40px;
   padding: 36px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +113,47 @@ header #second-word {
 
 .custom-quiz-container .item #preview-text {
   color: #2B7A78;
+}
+
+.custom-quiz-container .item .popover-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px 20px;
+  color: #17252A;
+  cursor: pointer;
+}
+
+.custom-quiz-container .item .popup {
+  width: 14rem;
+  position: absolute;
+  top: 9.5rem;
+  right: 0.3rem;
+  background: white;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  z-index: 1;
+}
+
+.custom-quiz-container .item .popup ul li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: #17252A;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.custom-quiz-container .item .popup ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 body {

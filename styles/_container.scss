@@ -45,11 +45,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-right: 10rem;
+    justify-items: center;
     .item{
         background-color: $secondaryBackgroundColor;
         width: 400px;
         margin-bottom: 40px;
         padding: 36px;
+        position: relative;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -62,6 +64,40 @@
         }
         #preview-text{
             color: $backgroundColor;
+        }
+        .popover-button{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 20px 20px;
+            color: $textColor;
+            cursor: pointer;
+        }
+        .popup{
+            width: 14rem;
+            position: absolute;
+            top: 9.5rem;
+            right: 0.3rem;
+            background: white;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            z-index: 1;
+            ul{
+                li{
+                    list-style: none;
+                    font-family: $mainFont;
+                    color: $textColor;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    margin: 15px 0;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                    }
+                }
+            }
         }
     }
 }
